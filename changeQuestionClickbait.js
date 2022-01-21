@@ -156,7 +156,7 @@ function enableImage(enabled){
         imageOne.style.visibility="visible";
         imageTwo.style.visibility="visible";
         imageOne.src="../src/SkewedGraph.PNG"
-        imageTwo.src="../src/UnSkewedGraph.PNG";
+        imageTwo.src="../src/UnskewedGraph.PNG";
     }
     //============================================= Disabled =============================================//
     if(enabled == false){
