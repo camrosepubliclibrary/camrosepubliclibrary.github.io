@@ -431,18 +431,18 @@ function clearText(){
 
     function nextQuestion() {
 
-        if (questionAnswered == 1) {
+        if (questionOn == "q1") {
             questionChange("q2");
 
         }
-        if (questionAnswered == 2) {
+        else if (questionAnswered == "q2") {
             questionChange("q3");
 
         }
-         if (questionAnswered == 3) {
+         else if (questionAnswered == "q3") {
             questionChange("q4");
         }
-        if(questionAnswered == 4) {
+         else if(questionAnswered == "q4") {
             questionChange("q5");
         }
         //if(answersCorrect == 5){questionChange("q6"); clearText()}
