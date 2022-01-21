@@ -290,6 +290,7 @@ function questionChange(questionNum) {
                 nextButton.style.border = "";
                 setQuestionCorrect(true, "q2", "A1");
                 showResponsePNG("smileyFace");
+                answersCorrect+=1;
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 fillInProgressBar();
@@ -304,6 +305,7 @@ function questionChange(questionNum) {
                 nextButton.style.border = "";
                 setQuestionCorrect(true, "q3", "A1");
                 showResponsePNG("smileyFace");
+                answersCorrect+=1;
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 fillInProgressBar();
@@ -318,6 +320,7 @@ function questionChange(questionNum) {
                 nextButton.style.border = "";
                 setQuestionCorrect(true, "q4", "A1");
                 showResponsePNG("smileyFace");
+                answersCorrect+=1;
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 fillInProgressBar();
@@ -330,6 +333,7 @@ function questionChange(questionNum) {
                 nextButton.style.border = "";
                 setQuestionCorrect(true, "q5", "A1");
                 showResponsePNG("smileyFace");
+                answersCorrect+=1;
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 results.style.visibility = "visible";
@@ -348,6 +352,7 @@ function questionChange(questionNum) {
                     "mistaking this joke media for real, trustworthy information.\n";
                 setQuestionCorrect(true, "q1", "A2");
                 showResponsePNG("smileyFace");
+                answersCorrect+=1;
                 questionAnswered+=1;
                 nextButton.style.visibility = "visible";
                 nextButton.textContent = "Next Question";
