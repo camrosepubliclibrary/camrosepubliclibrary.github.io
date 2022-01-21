@@ -1,6 +1,6 @@
 
 var questionOn = "q1";
-var answersCorrect = 0;
+const answersCorrect = 0;
 var answersIncorrect = 0;
 var questionAnswered = 0;
 
