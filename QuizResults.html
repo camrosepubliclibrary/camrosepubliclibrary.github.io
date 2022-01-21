@@ -6,7 +6,7 @@
     <link rel="icon" href="../src/pageIcon.png">
 
 </head>
-<script src="quizzes.js"></script>
+<!-- <script src="quizzes.js"></script> -->
 <body>
 
 
@@ -23,8 +23,8 @@
         <p id="results"></p>
         <br>
         <script> 
-            let x = document.cookie;
-        document.getElementById("results").textContent = "you got " + x + "/5 answers correct"
+            var score = sessionStorage.getItem("answer");
+        document.getElementById("results").textContent = "you got " + score + "/5 answers correct"
         </script>
         
         <br>

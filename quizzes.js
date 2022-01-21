@@ -340,6 +340,7 @@ function questionChange(questionNum) {
                 results.style.visibility = "visible";
                 resultsButton.style.visibility="visible";
                 // document.getElementById("results").textContent = "you got " + answersCorrect + "/5 answers correct"
+                sessionStorage.setItem("answer",answersCorrect);
                 
                 fillInProgressBar();
 
@@ -418,6 +419,7 @@ function questionChange(questionNum) {
                 disableOtherButton("A2");
                 results.style.visibility = "visible";
                 resultsButton.style.visibility="visible";
+                sessionStorage.setItem("answer",answersCorrect);
                 fillInProgressBar();
             }
 
