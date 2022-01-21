@@ -191,7 +191,7 @@ function showAnswer(answer,currentQuestion){
 
         }
         if(currentQuestion == "q2"){
-            answerBar.textContent = "Right again!"
+            answerBar.textContent = "Paying attention to the axis is important when trying to decipher fake news. Manipulating this information can massively affect the look of the graph."
             nextButton.style.visibility="visible";
             nextButton.textContent = "Next Question";
             nextButton.style.border="";

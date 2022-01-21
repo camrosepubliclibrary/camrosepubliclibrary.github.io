@@ -1,8 +1,9 @@
 
 var questionOn = "q1";
-const answersCorrect = 0;
+var answersCorrect = 0;
 var answersIncorrect = 0;
 var questionAnswered = 0;
+
 
 function questionChange(questionNum) {
     var questionName = document.getElementById("currentQuestionName");
@@ -337,8 +338,12 @@ function questionChange(questionNum) {
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 results.style.visibility = "visible";
+                results.textContent = answersCorrect;
+                document.getElementById("results").textContent = "you got " + answersCorrect + "/5 answers correct"
                 resultsButton.style.visibility="visible";
                 fillInProgressBar();
+
+                document.cookie = "answerCorrect=" + answersCorrect + ";";
 
 
 

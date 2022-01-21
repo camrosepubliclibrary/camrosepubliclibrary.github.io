@@ -20,10 +20,11 @@
     border-color: #8FB13E; padding: 40px ;background-color: #8FB13E; margin-right: 100px; margin-left:100px;
     margin-top: 50px">
         <br>
-        <p id="results">You got /5 answers correct.</p>
+        <p id="results"></p>
         <br>
         <script> 
-        document.getElementById("results").textContent = "you got " + answersCorrect + "/5 answers correct"
+            let x = document.cookie;
+        document.getElementById("results").textContent = "you got " + x + "/5 answers correct"
         </script>
         
         <br>
