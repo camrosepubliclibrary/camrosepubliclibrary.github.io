@@ -153,11 +153,11 @@ function questionChange(questionNum) {
 
     function showResponsePNG(symbol){
         if(symbol == "stopSign"){
-            document.getElementById("imageOne").src="stopSign.png"
+            document.getElementById("imageOne").src="../src/stopSign.png"
             document.getElementById("imageOne").style.visibility="visible"
         }
         if(symbol == "smileyFace"){
-            document.getElementById("imageOne").src="smileFace.png"
+            document.getElementById("imageOne").src="../src/smileFace.png"
             document.getElementById("imageOne").style.visibility="visible"
         }
         if(symbol == "hide"){
@@ -441,7 +441,7 @@ function clearText(){
 }
 function newLink(questionID){
         if(questionID=="q1") {
-            window.open("QuizArticlePicture1.png", "Blank")
+            window.open("../src/QuizArticlePicture1.png", "Blank")
         }
     if(questionID=="q2") {
         window.open("https://www.davidwolfe.com/3-reasons-stop-eating-peanut-butter-cups/", "Blank")

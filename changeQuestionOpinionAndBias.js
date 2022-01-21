@@ -120,8 +120,8 @@ function enableImage(enabled){
     if(enabled == true){
         imageOne.style.visibility="visible";
         imageTwo.style.visibility="visible";
-        imageOne.src="SkewedGraph.PNG"
-        imageOne.src="UnSkewedGraph.PNG";
+        imageOne.src="../src/SkewedGraph.PNG"
+        imageOne.src="../src/UnSkewedGraph.PNG";
     }
     //============================================= Disabled =============================================//
     if(enabled == false){
