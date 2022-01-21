@@ -338,12 +338,12 @@ function questionChange(questionNum) {
                 questionAnswered+=1;
                 disableOtherButton("A1");
                 results.style.visibility = "visible";
-                results.textContent = answersCorrect;
-                document.getElementById("results").textContent = "you got " + answersCorrect + "/5 answers correct"
                 resultsButton.style.visibility="visible";
+                // document.getElementById("results").textContent = "you got " + answersCorrect + "/5 answers correct"
+                
                 fillInProgressBar();
 
-                document.cookie = "answerCorrect=" + answersCorrect + ";";
+                // document.cookie = "answerCorrect=" + answersCorrect + ";";
 
 
 
@@ -416,6 +416,8 @@ function questionChange(questionNum) {
                 questionAnswered+=1;
                 showResponsePNG("stopSign");
                 disableOtherButton("A2");
+                results.style.visibility = "visible";
+                resultsButton.style.visibility="visible";
                 fillInProgressBar();
             }
 
