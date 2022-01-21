@@ -329,9 +329,9 @@ function questionChange(questionNum) {
             if (currentQuestion == "q5") {
                 answerBar.textContent = "Live science is a credible news source. You can see the author’s credentials" +
                     " and cites credible sources like Spanish National Research Council "
-                nextButton.style.visibility = "visible";
-                nextButton.textContent = "Next Question";
-                nextButton.style.border = "";
+                // nextButton.style.visibility = "visible";
+                // nextButton.textContent = "Next Question";
+                // nextButton.style.border = "";
                 setQuestionCorrect(true, "q5", "A1");
                 showResponsePNG("smileyFace");
                 answersCorrect+=1;
@@ -410,9 +410,9 @@ function questionChange(questionNum) {
                 answerBar.textContent = "Live science is a credible news source. You can see the author’s credentials " +
                     "and cites credible sources like Spanish National Research Council "
                 setQuestionCorrect(false, "q5", "A2");
-                nextButton.style.visibility = "visible";
-                nextButton.textContent = "Next Question";
-                nextButton.style.border = "";
+                // nextButton.style.visibility = "visible";
+                // nextButton.textContent = "Next Question";
+                // nextButton.style.border = "";
                 questionAnswered+=1;
                 showResponsePNG("stopSign");
                 disableOtherButton("A2");
@@ -429,20 +429,20 @@ function clearText(){
     explanation.textContent=""
 }
 
-    function nextQuestion() {
+function nextQuestion() {
 
         if (questionOn == "q1") {
             questionChange("q2");
 
         }
-        else if (questionAnswered == "q2") {
+        else if (questionOn == "q2") {
             questionChange("q3");
 
         }
-         else if (questionAnswered == "q3") {
+         else if (questionOn == "q3") {
             questionChange("q4");
         }
-         else if(questionAnswered == "q4") {
+         else if(questionOn == "q4") {
             questionChange("q5");
         }
         //if(answersCorrect == 5){questionChange("q6"); clearText()}
